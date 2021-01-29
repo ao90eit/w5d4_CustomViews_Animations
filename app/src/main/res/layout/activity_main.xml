@@ -6,8 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.MainActivity">
 
-    <com.aoinc.w5d4_customviews_animations.view.customview.RoundedButton
+<!--    <com.aoinc.w5d4_customviews_animations.view.customview.RoundedButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:elevation="8dp" />
+
+    <ImageView
+        android:id="@+id/menu_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_menu_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
